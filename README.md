@@ -21,6 +21,8 @@ This repository is dedicated to sharing my web design projects that highlight my
 ### Shop Jacket
 - **Description**: Shop Jacket is an online store design where users can browse and purchase stylish jackets. The project showcases a clean and modern layout, responsive design, and interactive elements.
 - **Screenshot**: https://github.com/kumar1310aryan/WebDesignVault/blob/main/Shop%20Jacket/Screenshot.png?raw=true
+### Cotton Weave
+- **Screenshot**: https://github.com/kumar1310aryan/WebDesignVault/blob/main/Cotton%20Weave/Screenshot.png?raw=true
 
 ## Technologies Used
 
