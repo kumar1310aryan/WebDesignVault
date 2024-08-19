@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Jacket</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      nav {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        li {
+          list-style: none;
+          margin: 15px;
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+      .cart {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+      }
+
+      .heading {
+        font-size: 65px;
+        font-weight: 400;
+        margin-top: 50px;
+        margin-left: 100px;
+      }
+
+      .description {
+        display: flex;
+        justify-content: space-between;
+
+        .exclusive {
+          font-size: 20px;
+          line-height: 1.8rem;
+          margin-left: 100px;
+          font-weight: 500;
+          width: 400px;
+        }
+
+        .addToCart {
+          width: 300px;
+          margin-right: 50px;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          line-height: 1.8rem;
+          font-size: 18px;
+          a {
+            color: black;
+          }
+        }
+      }
+
+      .description hr {
+        border: 1px solid black;
+        margin: 10px 0;
+      }
+
+      .cart-container {
+        display: flex; /* Use flexbox for the cart container */
+        justify-content: space-between; /* Space out elements */
+        align-items: center; /* Center items vertically */
+      }
+
+      .image {
+        height: 400px;
+        width: 100%;
+        background-image: url("project1bg.jpg");
+        background-size: cover;
+        background-position: top;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href=""><li>About</li></a>
+      <a href=""><li>News</li></a>
+      <a href=""><li>Cart</li></a>
+      <a href=""
+        ><li>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
+          </div></li
+      ></a>
+    </nav>
+    <h1 class="heading">
+      Lightly padded, <br />
+      quilted jacket in <br />
+      recycled polyester.
+    </h1>
+    <div class="description">
+      <div class="exclusive">
+        Exclusive brands aspire for the label haute <br />
+        couture, but the term is technically limited to <br />
+        members of the Chambre Syndicate de la Haute
+      </div>
+      <div class="addToCart">
+        <hr />
+        <div class="cart-container">
+          <a href="">Add to cart</a>
+          <i
+            class="fa-solid fa-arrow-right fa-rotate-by"
+            style="color: #141414; --fa-rotate-angle: -45deg"
+          ></i>
+        </div>
+        <hr />
+        Product details
+        <hr />
+        Shipping
+      </div>
+    </div>
+
+    <div class="image"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
