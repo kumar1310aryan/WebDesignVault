@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  /* background-color: gray; */
+}
+
+#circle {
+  display: flex;
+}
+
+.circle1 {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.navLinks1 {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  li {
+    margin: 15px;
+  }
+}
+
+#nav1 {
+  height: 50px;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#nav2 {
+    margin-top: 10px;
+  margin-left: 30px;
+  height: 50px;
+  display: flex;
+  li {
+    list-style: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 15px;
+  }
+}
