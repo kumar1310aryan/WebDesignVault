@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotton Weave</title>
+    <style>
+      body {
+        margin-top: 120px;
+        margin-left: 100px;
+        margin-right: 150px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .leftContainer {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        /* background-color: gray; */
+      }
+      .rightContainer {
+        width: 60%;
+        height: 600px;
+        /* background-color: gray; */
+        margin-left: 200px;
+        display: flex;
+      }
+      .heading {
+        font-size: 100px;
+        font-weight: 500;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        line-height: 6rem;
+        margin-bottom: 200px;
+      }
+
+      .colors {
+        font-size: 15px;
+        font-weight: 800;
+        width: 110px;
+        height: 30px;
+        /* background-color: gray; */
+        border: 1px solid black;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding-left: 2px; */
+
+        .black {
+          height: 20px;
+          width: 20px;
+          background-color: black;
+          border-radius: 50%;
+        }
+        .brown {
+          height: 20px;
+          width: 20px;
+          background-color: rgb(82, 49, 22);
+          border-radius: 50%;
+        }
+      }
+      .content {
+        margin-top: 40px;
+        width: 400px;
+        font-size: 18px;
+        p {
+          position: relative;
+          top: -15px;
+        }
+      }
+
+      .verticalText {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        writing-mode: vertical-rl;
+        padding: 1rem;
+        rotate: 180deg;
+        font-weight: bolder;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        margin-bottom: 2.5rem;
+      }
+      .rating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .price {
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .image {
+        width: 400px;
+        height: 560px;
+        background-image: url("pexels-zdmit-6636671.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        z-index: 1;
+      }
+      .addToBag {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: white;
+        position: relative;
+        top: -450px;
+        left: 350px;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="leftContainer">
+      <div class="heading">a cotton <br />weave.</div>
+      <div class="details">
+        <div class="colors">
+          <p>colors&nbsp;&nbsp;</p>
+          <div class="brown"></div>
+          &nbsp;
+          <div class="black"></div>
+        </div>
+        <div class="content">
+          <h3>Details</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quae
+            aperiam, eius itaque eveniet quis, ut veritatis consequuntur soluta
+            minus magnam quibusdam ipsam officiis nulla tenetur laudantium.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="rightContainer">
+      <div class="verticalText">Cotton twill cap</div>
+      <div class="visual">
+        <div class="price">
+          <div class=""><h4>$488</h4></div>
+          <div class="rating">
+            <h4>Rating:&nbsp;</h4>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+        </div>
+        <div class="image"></div>
+        <div class="addToBag"><a href="">add to bag</a></div>
+      </div>
+    </div>
+  </body>
+</html>
