@@ -17,12 +17,10 @@
         display: flex;
         flex-direction: column;
         width: 40%;
-        /* background-color: gray; */
       }
       .rightContainer {
         width: 60%;
         height: 600px;
-        /* background-color: gray; */
         margin-left: 200px;
         display: flex;
       }
@@ -40,13 +38,11 @@
         font-weight: 800;
         width: 110px;
         height: 30px;
-        /* background-color: gray; */
         border: 1px solid black;
         border-radius: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
-        /* padding-left: 2px; */
 
         .black {
           height: 20px;
@@ -119,6 +115,85 @@
         position: relative;
         top: -450px;
         left: 350px;
+      }
+
+      @media (max-width: 1200px) {
+        body {
+          flex-direction: column;
+          margin: 80px;
+          margin-top: 50px;
+        }
+
+        .leftContainer,
+        .rightContainer {
+          width: 100%;
+          margin: 0;
+        }
+
+        .heading {
+          font-size: 100px;
+          line-height: 5rem;
+          margin-bottom: 0px;
+        }
+
+        .details {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .image {
+          width: 800px; /* Full width for image */
+          height: 500px; /* Adjust height */
+        }
+        .price {
+          width: 750px;
+        }
+        .verticalText {
+          font-size: 40px;
+        }
+
+        .addToBag {
+          position: relative;
+          left: 750px;
+          /* top: 50px; */
+        }
+      }
+
+      @media (max-width: 768px) {
+        .rightContainer {
+          margin-left: -30px;
+        }
+        .heading {
+          font-size: 80px;
+          margin-bottom: 50px;
+        }
+
+        .details {
+          display: block;
+        }
+
+        .content {
+          width: 100%;
+        }
+
+        .verticalText {
+          font-size: 1.4rem;
+          position: relative;
+          top: -100px;
+        }
+
+        .addToBag {
+          height: 30px;
+          border-radius: 0px;
+          position: relative;
+          top: 2px;
+          left: 200px;
+        }
+        .image,
+        .price {
+          width: 300px;
+        }
       }
     </style>
     <link
