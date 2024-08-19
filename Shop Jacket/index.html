@@ -88,6 +88,68 @@
         background-size: cover;
         background-position: top;
       }
+
+      @media (max-width: 768px) {
+        nav {
+          justify-content: center;
+        }
+
+        nav li {
+          margin: 10px;
+        }
+
+        .heading {
+          font-size: 40px;
+          text-align: center;
+          margin: 20px 0;
+        }
+
+        .image {
+          height: 300px;
+          width: 100%;
+        }
+
+        .exclusive {
+          margin-left: 0;
+          padding-left: 0;
+          text-align: center;
+          position: relative;
+          left: -40px;
+        }
+
+        .addToCart {
+          position: relative;
+          left: 25px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .heading {
+          font-size: 30px; /* Further reduce heading size */
+          margin: 20px 0; /* Adjust margin */
+        }
+
+        .cart {
+          width: 30px; /* Adjust cart size */
+          height: 30px; /* Adjust cart size */
+          font-size: 12px; /* Adjust font size */
+        }
+
+        .exclusive {
+          padding: 0;
+          margin-left: 0px;
+          font-size: 15px;
+        }
+
+        .description {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
     </style>
     <link
       rel="stylesheet"
@@ -117,9 +179,10 @@
     </h1>
     <div class="description">
       <div class="exclusive">
-        Exclusive brands aspire for the label haute <br />
-        couture, but the term is technically limited to <br />
-        members of the Chambre Syndicate de la Haute
+        Exclusive brands aspire for the <br />
+        label haute couture, but the term is<br />
+        technically limited to members of the<br />
+        Chambre Syndicate de la Haute
       </div>
       <div class="addToCart">
         <hr />
