@@ -92,3 +92,53 @@ footer {
 #img1 {
   transform: rotate(20deg); /* Rotate the third image */
 }
+
+@media (max-width: 480px) {
+  .nav {
+    font-size: 10px;
+    .nav-part2 {
+      gap: 10px;
+    }
+  }
+  .img img {
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    z-index: -1;
+  }
+
+  .main {
+    position: absolute;
+    top: 15%;
+  }
+
+  .main h1 {
+    font-size: 50px;
+    position: relative;
+    top: 200px;
+  }
+
+  #h1-p1 {
+    position: relative;
+    left: -40px;
+  }
+
+  footer {
+    position: absolute;
+    top: 95%;
+    font-size: 10px;
+    height: 40px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 90px;
+    position: relative;
+    top: 200px;
+  }
+}
