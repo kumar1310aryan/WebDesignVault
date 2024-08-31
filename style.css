@@ -1,0 +1,17 @@
+#box1 {
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+  margin-bottom: 20px;
+}
+#box2 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(132, 13, 156);
+  margin-bottom: 20px;
+}
+#box3 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(87, 8, 66);
+}
