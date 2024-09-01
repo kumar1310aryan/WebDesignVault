@@ -87,14 +87,41 @@ footer {
 }
 
 #img2 {
-  transform: rotate(10deg); /* Rotate the second image */
+  transform: rotate(10deg);
 }
 
 #img1 {
-  transform: rotate(20deg); /* Rotate the third image */
+  transform: rotate(20deg);
 }
 
-@media (max-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main h1 {
+    font-size: 90px;
+    position: relative;
+    top: 200px;
+  }
+
+  #h1-p1 {
+    position: relative;
+    left: -40px;
+  }
+
+  footer {
+    position: absolute;
+    top: 95%;
+    font-size: 15px;
+    height: 40px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .nav {
     font-size: 10px;
     .nav-part2 {
@@ -133,13 +160,5 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .main h1 {
-    font-size: 90px;
-    position: relative;
-    top: 200px;
   }
 }
