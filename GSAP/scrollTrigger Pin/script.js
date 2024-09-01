@@ -4,7 +4,7 @@ gsap.to("#page2 h1", {
     trigger: "#page2",
     scroller: "body",
     scrub: 1,
-    markers: true,
+    // markers: true,
     start: "top 20%",
     pin: true,
   },
