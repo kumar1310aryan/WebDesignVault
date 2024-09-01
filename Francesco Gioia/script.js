@@ -1,10 +1,10 @@
 const tl = gsap.timeline();
 
-tl.from(".nav h3", {
+gsap.from(".nav h3", {
   y: -100,
-  duration: 0.7,
-  delay: 0.3,
-  //   stagger: 0.5,
+  // opacity: 0,
+  duration: 2,
+  delay: 1,
 });
 
 gsap.from("#h1-p1", {
@@ -30,6 +30,7 @@ gsap.from("#h1-p2", {
 tl.from("img", {
   opacity: 0,
   rotate: 40,
+  delay: 1,
   duaration: 1.3,
   stagger: 0.5,
 });
