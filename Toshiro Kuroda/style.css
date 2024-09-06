@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Guerrilla&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(253, 244, 232);
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  #p1 {
+    margin-left: 20px;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #p2 {
+    display: flex;
+    gap: 22px;
+    margin-right: 20px;
+  }
+}
+
+.page1 {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .lightHeading {
+    font-size: 65px;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .boldHeading {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .image {
+    height: 300px;
+    width: 200px;
+    background-image: url("https://images.pexels.com/photos/22481761/pexels-photo-22481761/free-photo-of-men-in-old-fashioned-coats-and-hat-standing-on-staircase.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  #left {
+    margin-left: 20px;
+    p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  #right {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
