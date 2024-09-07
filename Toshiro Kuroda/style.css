@@ -32,6 +32,28 @@ nav {
     gap: 22px;
     margin-right: 20px;
   }
+  a {
+    color: black;
+    text-decoration: none;
+    position: relative; /* Needed for the pseudo-element */
+  }
+
+  a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.8s ease;
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+  }
 }
 
 .page1 {
@@ -61,6 +83,7 @@ nav {
     background-image: url("https://images.pexels.com/photos/22481761/pexels-photo-22481761/free-photo-of-men-in-old-fashioned-coats-and-hat-standing-on-staircase.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
     background-position: center;
+    scale: 0;
   }
 }
 
@@ -69,6 +92,9 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding-top: 15px;
+  height: 50px;
+  width: 100%;
+  overflow-y: hidden;
   #left {
     margin-left: 20px;
     p {
@@ -86,5 +112,9 @@ footer {
       font-size: 18px;
       font-weight: bold;
     }
+  }
+  a {
+    color: black;
+    text-decoration: none;
   }
 }
