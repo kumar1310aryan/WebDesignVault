@@ -1,0 +1,68 @@
+@import url("https://fonts.cdnfonts.com/css/tesla");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://th.bing.com/th/id/R.ae5e2a469e0505428f06fcf2f7313b37?rik=U5P6imDdJOiQUw&riu=http%3a%2f%2fmedia.cntraveler.com%2fphotos%2f57211a94fe5fd76f60bc2760%2fmaster%2fpass%2fdeserts-gobi-cr-GettyImages-582205681.jpg&ehk=xIpoYz4HYKi6Oa58AQPxsbBeQu3DFpFTwOpihj86Hac%3d&risl=&pid=ImgRaw&r=0");
+  background-size: cover;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.23);
+}
+
+.text {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "TESLA", sans-serif;
+  color: aliceblue;
+  font-size: 80px;
+}
+
+.line {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px;
+  width: 45%;
+  background-color: rgba(229, 233, 237, 0.708);
+}
+
+button {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 200px;
+  font-family: "TESLA", sans-serif;
+  letter-spacing: 3px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.339);
+  color: #fff;
+  transition: all ease 0.5s;
+  font-weight: 900;
+}
+
+button:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
