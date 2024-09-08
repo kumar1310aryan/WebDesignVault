@@ -121,7 +121,7 @@ gsap.to(".image", {
   },
 });
 
-gsap.to(".aivehi", {
+gsap.to(".page2", {
   scrollTrigger: {
     pin: true,
   },
