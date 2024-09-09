@@ -29,7 +29,7 @@ body {
 #left #leftTop {
   width: 100%;
   height: 65%;
-  background-image: url("pexels-mastercowley-1128797.jpg");
+  background-image: url("./images/pexels-mastercowley-1128797.jpg");
   background-size: cover;
   position: relative;
 
@@ -90,14 +90,19 @@ body {
 
 .care {
   width: 100%;
-  height: 80%;
+  height: 60%;
   display: flex;
   gap: 180px;
 }
 
 .careContents {
+  margin-bottom: 20px;
   height: 40px;
-  width: 40px;
+  width: 60px;
+  p{
+    font-size: 13px;
+    width: 150px;
+  }
 }
 
 #right #rightTop {
@@ -124,7 +129,7 @@ body {
 .smallImg {
   height: 150px;
   width: 170px;
-  background-image: url("pexels-alena-koval-233944-961402.jpg");
+  background-image: url("./images/pexels-alena-koval-233944-961402.jpg");
   background-size: cover;
   position: absolute;
   top: 100%;
@@ -137,7 +142,7 @@ body {
 #right #rightBottom {
   width: 100%;
   height: 35%;
-  background-image: url("pexels-mastercowley-1128797.jpg");
+  background-image: url("./images/pexels-mastercowley-1128797.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
