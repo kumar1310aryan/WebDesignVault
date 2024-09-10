@@ -29,13 +29,23 @@
   box-sizing: border-box;
   font-family: "Plain Light";
   color: white;
-  cursor: pointer;
 }
 html,
 body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+}
+
+#crsr {
+  height: 2vw;
+  width: 2vw;
+  border: 2px solid rgba(255, 255, 255, 0.805);
+  border-radius: 50%;
+  position: fixed;
+  z-index: 10000;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
 }
 
 /* .mousefollower {
@@ -143,5 +153,39 @@ body {
 #page1 {
   height: 100vh;
   width: 100vw;
-  background-color: antiquewhite;
+  background-color: #000000;
+}
+
+#page1 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5vw 5.5vw;
+}
+
+#nav #nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8vw;
+
+  h4 {
+    font-size: 0.9vw;
+    font-weight: 900;
+  }
+}
+
+.hero {
+  width: 70%;
+  margin-left: 30%;
+}
+
+.hero:nth-child(2) {
+  margin-top: 20vh;
+}
+
+.hero h1 {
+  font-size: 6.5vw;
+  text-transform: uppercase;
+  line-height: 6.5vw;
 }
