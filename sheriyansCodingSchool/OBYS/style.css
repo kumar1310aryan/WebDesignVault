@@ -1,18 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Plain Light";
+  src: url(./fonts/plain-regular-webfont.ttf);
+}
+
+@font-face {
+  font-family: "Plain Light";
+  src: url(./Fonts/plain-light-webfont.ttf);
+}
+
+@font-face {
+  font-family: "silk serif";
+  src: url(./Fonts/silkserif-lightitalic-webfont.ttf);
+}
+
+@font-face {
+  font-family: "silk serif";
+  src: url(./Fonts/silkserif-regularitalic-webfont.ttf);
+}
+@font-face {
+  font-family: "PP Woodland";
+  src: url(/Obys-Agency-Clone/Fonts/ppwoodland-bold.ttf);
+}
 
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Gilroy";
+  font-family: "Plain Light";
   color: white;
+  cursor: pointer;
 }
-
 html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
+
+/* .mousefollower {
+  border: 2px solid #fff;
+  background-color: rgb(255, 255, 255);
+  scale: 2;
+  mix-blend-mode: difference;
+} */
 
 #loader {
   height: 100%;
@@ -41,7 +72,7 @@ body {
   h5,
   h6 {
     font-size: 2.5vw;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "silk serif";
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: italic;
@@ -56,32 +87,51 @@ body {
 .line h1 {
   font-size: 6vw;
   text-transform: uppercase;
-  font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .line h2 {
-  font-size: 5vw;
+  font-size: 4vw;
   text-transform: uppercase;
-  font-weight: 500;
-  animation-name: anime;
-  animation-duration: 0.5s;
+  font-weight: 400;
+  opacity: 0;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
 
 @keyframes anime {
   0% {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "plain light";
     -webkit-text-stroke: 1px #fff;
     color: #fff;
+    font-weight: 500;
+    opacity: 1;
   }
+
+  45% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+
+  50% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+  }
+
   100% {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "silk serif";
     -webkit-text-stroke: 1px #fff;
     color: transparent;
+    font-weight: 500;
+    opacity: 0;
   }
 }
 
