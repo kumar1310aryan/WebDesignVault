@@ -76,10 +76,11 @@ body {
   font-weight: 400;
 }
 
-#left-content p{
-    font-size: 1vw;
-    margin-bottom: 3vw;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.625);
+#left-content p {
+  font-size: 1vw;
+  margin-bottom: 3vw;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.625);
+  margin-left: 2.7vw;
 }
 
 #three h1 {
@@ -88,13 +89,58 @@ body {
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.66);
 }
 
+#three p {
+  margin-left: 4vw;
+  color: white;
+}
+
 #right-content {
   height: 100%;
   width: 50vw;
-  background-color: rgba(23, 82, 62, 0.576);
+  /* background-color: rgba(23, 82, 62, 0.576); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 5vw;
 }
 
-#number{
+#number {
   font-size: 2vw;
   margin-bottom: 2vw;
+}
+
+#right-content h1 {
+  font-size: 12vw;
+  font-weight: 200;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#italy {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#italy p {
+  font-size: 2vw;
+}
+
+
+
+#search {
+  height: 30px;
+  width: 20vw;
+  background-color: rgba(84, 83, 83, 0.655);
+  position: relative;
+  top: 2vw;
+  p{
+    font-size: 1.5vw;
+  }
+}
+
+#search #line{
+  width: 100%;
+  height: 1px;
+  background-color: white;
 }
