@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Matter Light";
+  src: url("./font/matter-light.ttf");
+}
+@font-face {
+  font-family: "Matter Regular";
+  src: url("./font/matter-regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("./font/roboto-flex-latin.ttf");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("./font/DM-Sans-regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Matter Light";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  background-color: #fff;
+}
+
+#home {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#nav {
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vw;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2vw;
+    font-weight: 500;
+  }
+}
+
+#menu-icon {
+  margin-left: -1.5vw;
+  margin-bottom: -0.4vw;
+}
+
+#home-heading {
+  width: 100%;
+  height: 12vw;
+  /* background-color: rebeccapurple; */
+  margin-top: 12vw;
+  padding: 0 15vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vw;
+
+  h3 {
+    font-size: 1.5vw;
+  }
+
+  h1 {
+    font-size: 6vw;
+    color: transparent;
+    -webkit-text-stroke: 1px #000000;
+    letter-spacing: -5px;
+    font-family: "DM Sans";
+  }
+}
+
+#home-bottom {
+  /* background-color: rgba(102, 51, 153, 0.7); */
+  padding: 14vw 15vw;
+
+  p {
+    font-size: 1.6vw;
+    line-height: 2.3vw;
+    width: 60%;
+  }
+}
+
+#home-bottom p::selection {
+  background-color: black; 
+  color: white; 
+}
