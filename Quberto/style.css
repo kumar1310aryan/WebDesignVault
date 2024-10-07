@@ -88,6 +88,11 @@ body {
   }
 }
 
+#home-heading h1:hover {
+  color: #000000ca;
+  cursor: pointer;
+}
+
 #home-bottom {
   /* background-color: rgba(102, 51, 153, 0.7); */
   margin: 14vw 15vw;
@@ -193,21 +198,53 @@ body {
   background-color: rgba(102, 51, 153, 0.549);
 }
 
+#featured-right .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 #button-div {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 3vw;
-
-  button {
-    padding: 1.2vw 2.5vw;
-    border-radius: 100px;
-    border: 2px solid rgba(163, 157, 157, 0.831);
-    background-color: #fff;
-    font-size: 1.1vw;
-    /* box-shadow: 4px #fffafa; */
-  }
 }
+
+#button-div button {
+  padding: 1.2vw 2.5vw;
+  border-radius: 100px;
+  border: 2px solid rgba(163, 157, 157, 0.831);
+  background-color: #fff;
+  font-size: 1.1vw;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease;
+}
+
+#button-div button::before {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: #000;
+  transition: all 1s ease;
+  z-index: -1;
+  transform: translate(-50%, 100%) scale(0); 
+  border-radius: 50%;
+}
+
+#button-div button:hover::before {
+  transform: translate(-50%, 0) scale(1.2); 
+}
+
+#button-div button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
 
 #resources {
   background-color: black;
@@ -305,20 +342,47 @@ body {
   font-size: 1.6vw;
   width: 58%;
 }
-
 #viewbtn {
   padding: 2vw 0;
-
-  button {
-    padding: 1vw 3vw;
-    border-radius: 100px;
-    background-color: transparent;
-    border: 2px solid rgba(128, 128, 128, 0.808);
-    font-size: 1.2vw;
-    font-weight: 600;
-    color: rgba(240, 255, 255, 0.877);
-  }
 }
+
+#viewbtn button {
+  padding: 1vw 3vw;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 2px solid rgba(128, 128, 128, 0.808);
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: rgba(240, 255, 255, 0.877);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 1s ease;
+}
+
+#viewbtn button::before {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(240, 255, 255, 0.877); 
+  transition: all 0.5s ease;
+  z-index: -1;
+  transform: translate(-50%, 100%) scale(0); 
+  border-radius: 50%;
+}
+
+#viewbtn button:hover::before {
+  transform: translate(-50%, 0) scale(1.2);
+}
+
+#viewbtn button:hover {
+  color: #000; 
+  cursor: pointer;
+}
+
 
 #new-inspo {
   width: 100%;
@@ -388,27 +452,27 @@ body {
 #inspo-scroller {
   width: 100%;
   height: auto;
-  overflow-x: auto; 
-  padding-left: 5vw; 
-  padding-right: 5vw; 
+  overflow-x: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
   display: flex;
-  gap: 2vw; 
-  justify-content: flex-start; 
+  gap: 2vw;
+  justify-content: flex-start;
   align-items: flex-end;
 }
 
 #inspo-scroller::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 .inspo-content {
   flex-shrink: 0;
   width: 300px;
-  background-color: #fff; 
+  background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.4s ease; 
-  padding: 20px 0; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+  padding: 20px 0;
 }
 
 .inspo-content:hover {
@@ -434,4 +498,10 @@ body {
   font-size: 1rem;
   color: #333;
   font-weight: 500;
+}
+
+#follow-us {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
 }

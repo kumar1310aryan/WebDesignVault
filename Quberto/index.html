@@ -4,22 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <title>Document</title>
   </head>
   <body>
     <div id="main">
       <div id="home">
         <div id="nav">
-          <a href=""><img src="./assets/cuberto.svg" alt="" /></a>
+          <a href=""
+            ><img src="./assets/cuberto.svg" alt="" class="magnet"
+          /></a>
           <div id="nav-right">
             <a href="">our showreel</a>
             <a href="">menu</a>
-            <a href="" id="menu-icon"><img src="assets/menu.svg" alt="" /></a>
+            <a href="" id="menu-icon" class="magnet"
+              ><img src="assets/menu.svg" alt=""
+            /></a>
           </div>
         </div>
         <div id="home-heading">
           <h3>We make it happen</h3>
-          <h1>Websites Apps Branding</h1>
+          <div style="display: flex; gap: 1vw">
+            <h1 class="hover">Websites</h1>
+            <h1 class="hover">Apps</h1>
+            <h1 class="hover">Branding</h1>
+          </div>
         </div>
         <div id="home-bottom">
           <p>
@@ -29,6 +38,7 @@
           </p>
         </div>
       </div>
+
       <div id="featured-projects">
         <div id="featured-headings">
           <h1>featured</h1>
@@ -56,20 +66,40 @@
               <h1>Official website of Riyadh, Saudi Arabia's capital</h1>
               <h4>design, development, product</h4>
             </div>
+            <div class="left-element last">
+              <h3>Riyadh</h3>
+              <h1>Official website of Riyadh, Saudi Arabia's capital</h1>
+              <h4>design, development, product</h4>
+            </div>
           </div>
           <div id="featured-right">
-            <div class="images"></div>
+            <div class="images">
+              <img src="./assets/img-1.avif" alt="" />
+              <img src="./assets/img-2.avif" alt="" />
+              <img src="./assets/img-3.jpg" alt="" />
+              <img src="./assets/img-4.jpg" alt="" />
+              <img src="./assets/img-5.jpg" alt="" />
+            </div>
           </div>
         </div>
-        <div id="button-div">
+        <div id="button-div" class="magnet">
           <button>View all projects</button>
         </div>
       </div>
+
       <div id="resources">
         <div id="resource-heading">
           <h1>Development</h1>
           <h1>and design</h1>
-          <h2><i>resources</i></h2>
+          <h2>
+            <i
+              ><span class="magnet">r</span><span class="magnet">e</span
+              ><span class="magnet">s</span><span class="magnet">o</span
+              ><span class="magnet">u</span><span class="magnet">r</span
+              ><span class="magnet">c</span><span class="magnet">e</span
+              ><span class="magnet">s</span></i
+            >
+          </h2>
         </div>
         <div id="resource-scroller">
           <div class="scroller-content">
@@ -152,12 +182,13 @@
                 source files.
               </p>
             </div>
-            <div id="viewbtn">
+            <div id="viewbtn" class="magnet">
               <button>VIEW ALL RESOURCES</button>
             </div>
           </div>
         </div>
       </div>
+
       <div id="new-inspo">
         <div id="new-heading-wrapper">
           <div id="new-heading">
@@ -251,10 +282,26 @@
             </div>
           </div>
         </div>
-        
       </div>
+
+      <div id="follow-us"></div>
     </div>
 
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
