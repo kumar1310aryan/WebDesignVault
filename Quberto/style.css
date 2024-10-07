@@ -90,16 +90,121 @@ body {
 
 #home-bottom {
   /* background-color: rgba(102, 51, 153, 0.7); */
-  padding: 14vw 15vw;
+  margin: 14vw 15vw;
 
   p {
     font-size: 1.6vw;
     line-height: 2.3vw;
     width: 60%;
+    margin-bottom: 1px;
   }
 }
 
 #home-bottom p::selection {
-  background-color: black; 
-  color: white; 
+  background-color: black;
+  color: white;
+}
+
+#featured-projects {
+  width: 100%;
+}
+
+#featured-headings {
+  width: 100%;
+  padding: 0 15vw;
+  padding-bottom: 5vw;
+
+  h1 {
+    font-size: 3vw;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 2.6vw;
+    color: transparent;
+    -webkit-text-stroke: 1px #000000f1;
+    font-family: "DM Sans";
+    margin-top: -0.5vw;
+    margin-left: 0.1vw;
+  }
+
+  h2::selection {
+    background-color: #000;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+  }
+  h1::selection {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+#featured-contents {
+  width: 100%;
+  height: 100vh;
+  padding: 0 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#featured-left {
+  width: 45%;
+  height: inherit;
+  /* border: 1px solid green; */
+  overflow: hidden;
+}
+
+.left-element {
+  width: 100%;
+  height: inherit;
+  padding: 8vw 0;
+
+  h3{
+    font-size: 1.7vw;
+    font-weight: 400;
+    margin-bottom: 1.5vw;
+  }
+
+  h1{
+    font-weight: 500;
+    font-size: 2.5vw;
+    margin-bottom: 1.9vw;
+    line-height: 3.2vw;
+  }
+
+  h4{
+    color: rgba(36, 34, 34, 0.872);
+    /* font-weight: 500; */
+  }
+}
+
+#featured-right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 45%;
+  min-height: inherit;
+  /* border: 1px solid rebeccapurple; */
+}
+
+#featured-right .images {
+  width: 90%;
+  height: 85%;
+  background-color: rgba(102, 51, 153, 0.549);
+}
+
+#button-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3vw;
+
+  button{
+    padding: 1.2vw 2.5vw;
+    border-radius: 100px;
+    border: 2px solid rgba(163, 157, 157, 0.831);
+    background-color: #fff;
+    font-size: 1.1vw;
+    /* box-shadow: 4px #fffafa; */
+  }
 }
