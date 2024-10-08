@@ -33,6 +33,23 @@ body {
   background-color: #fff;
 }
 
+#mouse-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-image: url("./assets/drag.jpg"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 100000000000000000000;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 #home {
   width: 100%;
   min-height: 100vh;
@@ -196,6 +213,7 @@ body {
   width: 90%;
   height: 85%;
   background-color: rgba(102, 51, 153, 0.549);
+  overflow: hidden;
 }
 
 #featured-right .images img {
@@ -225,26 +243,25 @@ body {
 #button-div button::before {
   content: "";
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   left: 50%;
   width: 300%;
   height: 300%;
   background-color: #000;
   transition: all 1s ease;
   z-index: -1;
-  transform: translate(-50%, 100%) scale(0); 
+  transform: translate(-50%, 100%) scale(0);
   border-radius: 50%;
 }
 
 #button-div button:hover::before {
-  transform: translate(-50%, 0) scale(1.2); 
+  transform: translate(-50%, 0) scale(1.2);
 }
 
 #button-div button:hover {
   color: #fff;
   cursor: pointer;
 }
-
 
 #resources {
   background-color: black;
@@ -296,6 +313,10 @@ body {
   /* background-color: rebeccapurple; */
   width: 400px;
   flex-shrink: 0;
+}
+
+.scroller-content:hover {
+  cursor: pointer;
 }
 
 .content-bg {
@@ -363,14 +384,14 @@ body {
 #viewbtn button::before {
   content: "";
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   left: 50%;
   width: 300%;
   height: 300%;
-  background-color: rgba(240, 255, 255, 0.877); 
+  background-color: rgba(240, 255, 255, 0.877);
   transition: all 0.5s ease;
   z-index: -1;
-  transform: translate(-50%, 100%) scale(0); 
+  transform: translate(-50%, 100%) scale(0);
   border-radius: 50%;
 }
 
@@ -379,10 +400,9 @@ body {
 }
 
 #viewbtn button:hover {
-  color: #000; 
+  color: #000;
   cursor: pointer;
 }
-
 
 #new-inspo {
   width: 100%;
@@ -393,7 +413,6 @@ body {
 
 #new-heading-wrapper {
   display: flex;
-  /* overflow: auto; */
 }
 
 #new-heading {
@@ -459,6 +478,9 @@ body {
   gap: 2vw;
   justify-content: flex-start;
   align-items: flex-end;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  cursor: grab;
 }
 
 #inspo-scroller::-webkit-scrollbar {
@@ -473,14 +495,16 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease;
   padding: 20px 0;
+  position: relative;
 }
 
 .inspo-content:hover {
   transform: translateY(-10px);
+  /* cursor: pointer; */
 }
 
 .inspo-content-bg {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   height: auto;
   border-radius: 20px;
@@ -500,8 +524,88 @@ body {
   font-weight: 500;
 }
 
+.dragging {
+  cursor: grabbing;
+}
+
 #follow-us {
   width: 100%;
   height: 100vh;
-  background-color: #000;
+  background-color: #000000;
+  padding: 1px;
+  overflow: hidden;
+}
+/* 
+#follow-heading {
+  width: 100%;
+  height: 15vw;
+  background-color: #668f14a8;
+  margin-top: 6vw;
+  display: flex;
+  align-items: center;
+  overflow: hidden; 
+  position: relative; 
+}
+
+.marquee {
+  display: flex;
+  gap: 3vw;
+  white-space: nowrap; 
+  animation: scroll-marquee 30s linear infinite;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+h1 {
+  font-size: 10vw;
+  word-spacing: 1vw;
+  margin: 0; 
+}
+
+.circle {
+  margin-top: 6vw;
+  height: 9vw;
+  width: 9vw;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  flex-shrink: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+#follow-heading-wrapper {
+  display: flex;
+}
+
+.follow-heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6vw 0;
+  animation: marquee 20s linear infinite;
+  white-space: nowrap;
+  gap: 2vw;
+
+  h1 {
+    font-size: 10vw;
+    word-spacing: 1vw;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .follow-circle {
+    height: 9vw;
+    width: 9vw;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 2vw;
+  }
 }
