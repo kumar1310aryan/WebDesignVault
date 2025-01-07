@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  padding: 2vw 4vw;
+  #nav {
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 1.8vw;
+      color: gray;
+    }
+
+    #links {
+      display: flex;
+      gap: 3vw;
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2vw;
+        font-weight: 500;
+      }
+    }
+  }
+  #heading {
+    /* background-color: pink; */
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    /* gap: 3vw; */
+    justify-content: space-between;
+    h1 {
+      font-size: 8vw;
+      font-weight: 800;
+      color: #fbf5eefb;
+    }
+    p {
+      font-size: 1.3vw;
+      color: gray;
+      font-weight: 800;
+    }
+  }
+  #heading2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+  }
+  #icons {
+    display: flex;
+    gap: 1vw;
+  }
+  #home-body {
+    width: 100%;
+    height: 57%;
+    margin-top: 3%;
+    background-color: #ffffffc7;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    color: #181818;
+    #text {
+      width: 30%;
+      height: 100%;
+      padding: 1.5vw;
+      .gray {
+        color: rgb(107, 105, 105);
+        font-weight: 600;
+      }
+      h3 {
+        font-size: 1.7vw;
+      }
+      p {
+        margin-top: 1vw;
+        font-weight: 600;
+        color: rgba(41, 40, 40, 0.918);
+      }
+      #buttons {
+        display: flex;
+        margin-top: 2vw;
+        width: 100%;
+        justify-content: space-between;
+        .button {
+          padding: 0.3vw 1vw;
+          font-size: 1.2vw;
+          font-weight: 500;
+          color: #fff;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(28, 27, 27, 0.874);
+        }
+      }
+    }
+    #image {
+      width: 70%;
+      height: 100%;
+      /* background-color: gray; */
+      background-image: url("./assets/bg1.jpg");
+      background-size: cover; 
+      background-position: center;
+    }
+  }
+}
