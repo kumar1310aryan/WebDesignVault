@@ -190,3 +190,33 @@ body {
     }
   }
 }
+
+#page2{
+  width: 100%;
+  padding: 2vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1{
+    text-align: center;
+    font-size: 5vw;
+    line-height: 5vw;
+    color: rgba(208, 208, 208, 0.945);
+  }
+  #button{
+    margin-top: 2.5vw;
+    width: 23%;
+    height: 3.5vw;
+    background-color: rgba(245, 85, 85, 0.751);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d3d3d3eb;
+    font-size: 1.4vw;
+    font-weight: 700;
+    border-radius: 40px;
+    box-shadow: 5px 5px 2px rgba(255, 255, 255, 0.3);
+  }
+}
