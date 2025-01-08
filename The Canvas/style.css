@@ -116,8 +116,77 @@ body {
       height: 100%;
       /* background-color: gray; */
       background-image: url("./assets/bg1.jpg");
-      background-size: cover; 
+      background-size: cover;
       background-position: center;
+    }
+  }
+}
+
+#page1 {
+  width: 100%;
+  height: 100vh;
+  padding: 2vw;
+  #box{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #c4bbbbe9;
+    display: flex;
+    padding: 2vw;
+    #left{
+      width: 35%;
+      height: 100%;
+      background-color: rgba(172, 172, 172, 0.835);
+      padding: 2vw;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    #right{
+      width: 65%;
+      height: 100%;
+      padding: 0 3vw;
+
+      h5{
+        font-size: 1.3vw;
+        color: gray;
+      }
+
+      h3{
+        font-size: 2.5vw;
+      }
+      .audio{
+        width: 100%;
+        height: 4vw;
+        margin-top: 1vw;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid #9b9b9beb;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0.5vw;
+        #name{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1vw;
+          h2{
+            font-weight: 500;
+          }
+          p{
+            font-size: 1.3vw;
+            color: rgba(168, 168, 168, 0.93);
+          }
+        }
+        #time{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          /* height: 100%; */
+          color: rgba(190, 190, 190, 0.877);
+        }
+      }
     }
   }
 }
