@@ -496,3 +496,57 @@ body {
     }
   }
 }
+
+#footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #7d7979e7;
+  
+  #heading {
+    padding: 0 3vw;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    /* gap: 3vw; */
+    justify-content: space-between;
+    h1 {
+      font-size: 8vw;
+      font-weight: 800;
+      color: #1c1e20e4;
+    }
+    p {
+      font-size: 1.3vw;
+      color: #1c1e20c7;
+      font-weight: 800;
+    }
+  }
+  #heading2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    
+  }
+  #icons {
+    display: flex;
+    gap: 1vw;
+  }
+  #bottom{
+    margin-top: 3vw;
+    width: 100%;
+    border-top: 2px solid #1f1f1fd3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vw 2vw;
+    div{
+      display: flex;
+      gap: 1vw;
+      h5{
+        font-size: 1vw;
+        font-weight: 600;
+        color: #1f1f1fb9;
+      }
+    }
+  }
+}
