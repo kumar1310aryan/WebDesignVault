@@ -126,37 +126,37 @@ body {
   width: 100%;
   height: 100vh;
   padding: 2vw;
-  #box{
+  #box {
     width: 100%;
     height: 100%;
     border: 2px solid #c4bbbbe9;
     display: flex;
     padding: 2vw;
-    #left{
+    #left {
       width: 35%;
       height: 100%;
       background-color: rgba(172, 172, 172, 0.835);
       padding: 2vw;
-      img{
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
-    #right{
+    #right {
       width: 65%;
       height: 100%;
       padding: 0 3vw;
 
-      h5{
+      h5 {
         font-size: 1.3vw;
         color: gray;
       }
 
-      h3{
+      h3 {
         font-size: 2.5vw;
       }
-      .audio{
+      .audio {
         width: 100%;
         height: 4vw;
         margin-top: 1vw;
@@ -166,20 +166,20 @@ body {
         display: flex;
         justify-content: space-between;
         padding-right: 0.5vw;
-        #name{
+        #name {
           display: flex;
           align-items: center;
           justify-content: center;
           gap: 1vw;
-          h2{
+          h2 {
             font-weight: 500;
           }
-          p{
+          p {
             font-size: 1.3vw;
             color: rgba(168, 168, 168, 0.93);
           }
         }
-        #time{
+        #time {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -191,7 +191,7 @@ body {
   }
 }
 
-#page2{
+#page2 {
   width: 100%;
   padding: 2vw;
   height: 50vh;
@@ -199,13 +199,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  h1{
+  h1 {
     text-align: center;
     font-size: 5vw;
     line-height: 5vw;
     color: rgba(208, 208, 208, 0.945);
   }
-  #button{
+  #button {
     margin-top: 2.5vw;
     width: 23%;
     height: 3.5vw;
@@ -218,5 +218,96 @@ body {
     font-weight: 700;
     border-radius: 40px;
     box-shadow: 5px 5px 2px rgba(255, 255, 255, 0.3);
+  }
+}
+
+#page3 {
+  width: 100%;
+  height: 90vh;
+  padding: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  #first {
+    width: 32.5%;
+    height: 100%;
+    border: 1px solid #d3d3d3eb;
+    border-radius: 4px;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1{
+      font-size: 5.5vw;
+      color: rgba(207, 207, 207, 0.928);
+    }
+    #bottom{
+      width: 100%;
+      /* height: 2vw; */
+      /* background-color: gray; */
+      display: flex;
+      justify-content: flex-end;
+      gap: 2vw;
+      #left,#right{
+        height: 3vw;
+        width: 3vw;
+        border: 1px solid #8b8b8bdd;
+        background-color: #363434ed;
+        border-radius: 50%;
+        box-shadow: 3px 3px 2px rgba(102, 102, 102, 0.928);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .artist {
+    width: 32.5%;
+    height: 100%;
+    border: 1px solid #d3d3d3eb;
+    border-radius: 4px;
+    padding: 1.5vw;
+    #image{
+      width: 100%;
+      height: 45%;
+      background-color: #a4a1a1;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    #categories{
+      width: 100%;
+      /* height: 3vw; */
+      /* background-color: pink; */
+      margin-top: 1vw;
+      margin-bottom: 2vw;
+      display: flex;
+      gap: 1vw;
+      .category{
+        padding: 0.2vw 0.5vw;
+        background-color: #6d6a6a;
+        color: #181818;
+        font-size: 1vw;
+        font-weight: 800;
+        width: fit-content;
+        border-radius: 20px;
+      }
+    }
+    h5{
+      color: gray;
+      margin-top: 0.5vw;
+    }
+    h2{
+      margin-top: 0.5vw;
+      color: #d7d5d5;
+      font-size: 2vw;
+    }
+    p{
+      font-size: 1.2vw;
+      margin-top: 1vw;
+      color: rgba(179, 178, 178, 0.945);
+    }
   }
 }
