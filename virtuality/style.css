@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-color: #be9effe3;
+  /* background-color: rgba(48, 21, 59, 0.812); */
+  position: relative;
+
+  #nav {
+    width: 67%;
+    height: 6vw;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 4vw;
+    h1 {
+      font-size: 2vw;
+      color: rgb(36, 12, 36);
+    }
+    #links {
+      display: flex;
+      gap: 4vw;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+        font-size: 1.2vw;
+        font-weight: 500;
+        color: rgba(46, 15, 46, 0.892);
+      }
+    }
+  }
+
+  #image1 {
+    width: 18%;
+    height: 60%;
+    background-color: powderblue;
+    position: absolute;
+    top: 0;
+    left: 82%;
+    background-image: url("./assets/robo.jpg");
+    background-size: cover;
+  }
+  #image2 {
+    width: 18%;
+    height: 60%;
+    /* background-color: powderblue; */
+    position: absolute;
+    top: 20%;
+    left: 63%;
+    background-image: url("./assets/gurl.jpg");
+    background-size: cover;
+  }
+
+  #heading {
+    width: 63%;
+    height: 65vh;
+    padding: 4vw;
+
+    margin-top: 6vw;
+    h1 {
+      font-size: 6vw;
+      letter-spacing: -0.2vw;
+      line-height: 0.9;
+      transform: scaleY(2);
+      font-weight: 600;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgb(36, 12, 36);
+    }
+  }
+  #getstarted {
+    margin-top: 8vw;
+    width: 78%;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    #button{
+      width: 200px;
+      height: 50px;
+      background-color: rgba(46, 15, 46, 0.892);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+    a{
+      font-size: 1.2vw;
+      color: rgb(36, 12, 36);
+    }
+  }
+}
